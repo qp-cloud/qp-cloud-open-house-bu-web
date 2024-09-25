@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU OPEN HOUSE 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 60px; /* Account for navbar height */
+            background-color: orange;
+        }
+
+        /* Navigation Bar */
+        nav.navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background-color: #00274d; /* Darker blue for a professional look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .navbar-brand {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00 !important; /* Gold color on hover */
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(100%); /* Ensures the icon is visible */
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background-position: center;
+            background-size: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Highlights Section */
+        .highlights {
+            margin-top: 40px;
+        }
+
+        .highlight-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight-card .card-body {
+            text-align: center;
+        }
+
+        .highlight-card .btn-primary {
+            background-color: #00274d;
+            border-color: #00274d;
+        }
+
+        .highlight-card .btn-primary:hover {
+            background-color: #ffcc00;
+            border-color: #ffcc00;
+            color: #00274d;
+        }
+
+        .container h2 {
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #00274d;
+        }
+
+        /* Carousel */
+        #heroCarousel .carousel-control-prev-icon,
+        #heroCarousel .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">BU OPEN HOUSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="About the Open House.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Workshops and Activities.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery Page.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ Page.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sponsors and Partners Page.html">Sponsors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero" style="background-image: url('images/banner_3.jpg');">
+                    <h1>Welcome to BU Open House 2024!</h1>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('images/banner_2.jpg');">
+                    <h1>Discover Your Future</h1>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('images/banner_1.jpg');">
+                    <h1>Experience Campus Life</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+        <!-- Highlights Section -->
+    <div class="container highlights py-5">
+        <h2 class="text-center mb-4">Highlights event</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card highlight-card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เวิร์คช็อป</h5>
+                        <p class="card-text">เวิร์คช็อปที่น่าสนใจจากผู้เชี่ยวชาญในอุตสาหกรรม</p>
+                        <a href="Workshops and Activities.html" class="btn btn-primary">ดูเวิร์คช็อป</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card highlight-card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ทัวร์ชมวิทยาเขต</h5>
+                        <p class="card-text">ทัวร์ชมสิ่งอำนวยความสะดวกที่สวยงามในวิทยาเขต</p>
+                        <a href="Gallery Page.html" class="btn btn-primary">เข้าร่วมทัวร์</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card highlight-card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">คำถามที่พบบ่อย</h5>
+                        <p class="card-text">พบปะและเชื่อมต่อกับนักเรียนและอาจารย์</p>
+                        <a href="FAQ Page.html" class="btn btn-primary">เชื่อมต่อ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
